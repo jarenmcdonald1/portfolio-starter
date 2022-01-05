@@ -2,15 +2,15 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Footer = ({ siteTitle }) => (
   <>
-    <header>
-      <div className="header-left">
+    <section>
+      <div className="footer-left">
         <h1>
           <Link to="/">{siteTitle}</Link>
         </h1>
       </div>
-      <div className="header-right">
+      <div className="footer-right">
         <nav>
           <ul>
             <li><Link to="/about">About</Link></li>
@@ -19,16 +19,25 @@ const Header = ({ siteTitle }) => (
           </ul>
         </nav>
       </div>
-    </header>
+    </section>
+    <footer
+      style={{
+        marginTop: `2rem`,
+      }}
+    >
+      © {new Date().getFullYear()}, Built with
+      {` `}
+      <a href="https://www.gatsbyjs.com">Gatsby</a>
+    </footer>
   </>
 )
 
-Header.propTypes = {
+Footer.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Footer.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Footer
