@@ -1,0 +1,23 @@
+/* global styles */
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: $purple-500;
+    color: $white-100;
+    font-size: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Verdana, "Helvetica Neue", sans-serif;
+}
+  
+a {
+    color: $blue-300;
+}
+
+h1, h2, h3, h4, h5 {
+    a {
+        text-decoration: none;
+    }
+}
