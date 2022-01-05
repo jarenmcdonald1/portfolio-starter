@@ -4,20 +4,20 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <>
-    <header className="">
-      <div className="header-left">
-        <h1>
-          <Link to="/">{siteTitle}</Link>
-        </h1>
-      </div>
-      <div className="header-right">
-        <nav>
-          <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/work">Work</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
+    <header className="container-fluid">
+      <div className="row">
+        <div className="col mr-auto">
+          <h1 className="mb-0">
+            <Link className="header-brand" to="/">{siteTitle}</Link>
+          </h1>
+        </div>
+        <div className="col ml-auto d-flex justify-content-end align-items-center">
+          <nav className="header-nav">
+            <Link to="/about">About</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+        </div>
       </div>
     </header>
   </>

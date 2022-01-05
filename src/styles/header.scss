@@ -1,0 +1,43 @@
+/* header module styles */
+
+
+.header-brand {
+    font-weight: 900;
+    color: $color-white;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+        margin-left: 1rem;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: $gray-200;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+
+/* Xsmall screen breakpoint */
+
+@media only screen and (min-width: $breakpoint-xs) {
+    
+}
+
+
+/* Small screen breakpoint */
+
+@media only screen and (min-width: $breakpoint-sm) {
+    
+}
