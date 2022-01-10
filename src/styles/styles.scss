@@ -14,6 +14,7 @@ body {
   
 a {
     color: $blue-300;
+    @include primary-transition;
 
     &:hover {
         color: $blue-200;
@@ -23,5 +24,16 @@ a {
 h1, h2, h3, h4, h5 {
     a {
         text-decoration: none;
+    }
+}
+
+
+.main-con {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .content-con {
+        flex-grow: 1;
     }
 }

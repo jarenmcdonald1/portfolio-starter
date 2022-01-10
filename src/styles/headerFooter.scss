@@ -1,0 +1,82 @@
+/* footer module styles */
+
+
+.footer-nav {
+    .icon-links {
+        margin: 0.125em 0.25em;
+        font-size: 1.85em;
+    }
+
+    a {
+        margin-right: 1rem;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: $gray-200;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+.footer-text {
+    font-size: 0.85em;
+    text-align: center;
+    color: $gray-300;
+}
+
+
+
+/* header module styles */
+
+
+.header-brand {
+    font-weight: 900;
+    color: $color-white;
+}
+
+.footer-nav, .header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-nav {
+    justify-content: flex-end;
+}
+
+.header-nav {
+
+    a {
+        margin-left: 1rem;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: $gray-200;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+
+/* Xsmall screen breakpoint */
+
+@media only screen and (min-width: $breakpoint-xs) {
+    
+}
+
+
+/* Small screen breakpoint */
+
+@media only screen and (min-width: $breakpoint-sm) {
+    
+}
