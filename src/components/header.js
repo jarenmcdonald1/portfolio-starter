@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <>
+  <section className="header-section py-1">
     <header className="container-fluid">
       <div className="row">
         <div className="col mr-auto">
@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </div>
     </header>
-  </>
+  </section>
 )
 
 Header.propTypes = {

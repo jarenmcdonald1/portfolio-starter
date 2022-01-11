@@ -1,0 +1,21 @@
+/* banner styles */
+
+
+.banner-full {
+    display: grid;
+
+    .indexBannerImg {
+        grid-area: 1/1;
+        max-height: 500px;
+    }
+    .indexBannerCon {
+        grid-area: 1/1;
+        position: relative;
+        place-items: center;
+    }
+
+    .indexBannerCard, .card {
+        background-color: rgba(0,0,0,0.1);
+        border: 0;
+    }
+}
