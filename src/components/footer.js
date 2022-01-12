@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 
-const Footer = () => {
+const Footer = ({ githubLink, youtubeLink, linkedinLink }) => {
   
   return (
   <div className="footer-con">
@@ -20,18 +20,22 @@ const Footer = () => {
         </div>
         <div className="col ml-auto d-flex justify-content-end align-items-center">
           <nav className="footer-nav justify-content-end">
-            <Link className="icon-links" to="#" alt="Click to view my Github profile">
+            <a 
+              className="icon-links" 
+              href={githubLink}
+              alt="Click to view my Github profile"
+            >
               <FontAwesomeIcon icon={faGithubSquare} title="github logo" />
               <p className="sr-only">Click to view my Github profile</p>
-            </Link>
-            <Link className="icon-links" to="#" alt="Click to view my YouTube profile">
+            </a>
+            <a className="icon-links" href={youtubeLink} alt="Click to view my YouTube profile">
               <FontAwesomeIcon icon={faYoutubeSquare} title="youtube logo" />
               <p className="sr-only">Click to view my YouTube profile</p>
-            </Link>
-            <Link className="icon-links" to="#" alt="Click to view my Linkedin profile">
+            </a>
+            <a className="icon-links" href={linkedinLink} alt="Click to view my Linkedin profile">
               <FontAwesomeIcon icon={faLinkedin} title="linkedin logo" />
               <p className="sr-only">Click to view my Linkedin profile</p>
-            </Link>
+            </a>
           </nav>
         </div>
       </div>
@@ -56,3 +60,4 @@ Footer.defaultProps = {
 }
 
 export default Footer
+

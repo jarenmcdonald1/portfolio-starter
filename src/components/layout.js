@@ -12,6 +12,11 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          social {
+            github
+            linkedin
+            youtube
+          }
         }
       }
     }
@@ -23,7 +28,12 @@ const Layout = ({ children }) => {
       <main className="content-con">
         {children}
       </main>
-      <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Footer 
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        githubLink={data.site.siteMetadata?.social.github} 
+        linkedinLink={data.site.siteMetadata?.social.linkedin}
+        youtubeLink={data.site.siteMetadata?.social.youtube}  
+      />
     </div>
   )
 }
@@ -33,3 +43,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+

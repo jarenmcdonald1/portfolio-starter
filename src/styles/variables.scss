@@ -42,6 +42,8 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
+$border-radius: 0.45em;
+
 
 @mixin primary-transition() {
     transition: all 0.14s ease-in-out;

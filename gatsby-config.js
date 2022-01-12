@@ -8,6 +8,7 @@ module.exports = {
       linkedin: `https://www.linkedin.com/in/jaren-mcdonald`,
       github: `https://github.com/jarenmcdonald1`,
       youtube: `https://www.youtube.com/channel/UCOF3fIjiwC3PMf_e_W3spLg/featured`,
+      emailUrl: `jaren.mcd@gmail.com`,
     },
   },
   plugins: [

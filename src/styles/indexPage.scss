@@ -24,6 +24,34 @@
     }
 }
 
+.section-title {
+    z-index: 10;
+    position: relative;
+
+    margin-bottom: 0;
+    padding: 0.125em 0;
+    font-weight: 700;
+    font-size: 3em;
+    color: $color-white;
+    line-height: 0.6;
+}
+
+
+
+.contact-card {
+    background-color: $secondary-400;
+    color: $color-white;
+
+    a {
+        color: inherit;
+    }
+
+    .contact-email-link {
+        font-size: 2em;
+        border-bottom: 2px solid $color-white;
+    }
+}
+
 
 @media only screen and (min-width: $breakpoint-xs) {
     .quicklinksCon {
@@ -45,5 +73,16 @@
         a {
             font-size: 1em;
         }
+    }
+
+    .section-title {
+        font-size: 9vw;
+    }
+}
+
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .section-title {
+        font-size: 6em;
     }
 }

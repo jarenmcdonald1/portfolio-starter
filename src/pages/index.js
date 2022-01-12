@@ -1,29 +1,18 @@
 import * as React from "react"
-import { graphql, Link, StaticQuery } from "gatsby"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => {
-
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          social {
-            github
-          }
-        }
-      }
-    }
-  `)
-
-  const social = data.site.siteMetadata?.social
+const IndexPage = ({ data }) => {
+  const emailLink = data.site.siteMetadata?.social.emailUrl;
 
   return (
   <Layout>
     <Seo title="Home" />
+
+    {/* banner open */}
     <section className="banner-full">
       <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} alt="..." />
       <div className="container indexBannerCon">
@@ -36,6 +25,8 @@ const IndexPage = () => {
         </div>
       </div>
     </section>
+
+    {/* quick links open */}
     <section className="quicklinksCon">
       <div className="linksCon w-100 d-flex flex-nowrap justify-content-center align-items-center">
         <Link to="/work" alt="...">
@@ -46,18 +37,35 @@ const IndexPage = () => {
         </Link>
       </div>
     </section>
-    <h1>a</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <a src={social?.github}>View github</a>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+
+    {/* main body content */}
+    <section className="worksamples-con">
+      <div className="row">
+        
+      </div>
+    </section>
+
+    {/* contact open */}
+    <section className="contact-con container">
+      <div className="row">
+        <div className="col">
+          <h2 className="section-title">Say hi.</h2>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col contact-card">
+          <div className="card-body">
+            <h3 className="pb-3 text-center contact-email-link">
+              <a href={`mailto:${emailLink}`} alt="send me an email">{emailLink}</a>
+            </h3>
+            <p className="card-text">Hello, I'm Jaren</p>
+            <p className="card-text">I'm a multi-talented front-end web developer that loves what I do!</p>
+            <p className="card-text">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
+            <p className="card-text">Jaren McDonald<br/>Vancouver, Canada</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 }
@@ -74,6 +82,13 @@ export const pageQuery = graphql`
           quality: 100
           layout: FULL_WIDTH
         )
+      }
+    }
+    site {
+      siteMetadata {
+        social {
+          emailUrl
+        }
       }
     }
   }
