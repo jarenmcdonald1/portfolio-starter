@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `JM`,
     description: `Description text Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `jarenmcdonald`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     social: {
       linkedin: `https://www.linkedin.com/in/jaren-mcdonald`,
@@ -14,6 +14,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `${__dirname}/content/projects`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

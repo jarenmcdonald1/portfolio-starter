@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
     <section className="contact-con container">
       <div className="row">
         <div className="col">
-          <h2 className="section-title">Say hi.</h2>
+          <h2 className="section-title">Say hi!</h2>
         </div>
       </div>
       <div className="row">
