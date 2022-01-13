@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
         <div className="row h-100">
           <div className="col d-flex justify-content-center align-items-center">
             <div className="card indexBannerCard mx-auto px-2 py-3">
-              <h4>Welcome</h4>
+              <h4 className="mb-0">Developing the future with a sense of adventure!</h4>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
           View my work
         </Link>
         <Link to="/contact" alt="...">
-          Let's talk
+          Let's connect
         </Link>
       </div>
     </section>
@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="row">
-      <div className="col-12 col-md-4">
+      <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Code <FontAwesomeIcon className="titleIcon" icon={faLaptopCode} title="laptop code icon" /></h4>
@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Design <FontAwesomeIcon className="titleIcon" icon={faPenNib} title="design icon" /></h4>
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Video <FontAwesomeIcon className="titleIcon" icon={faPhotoVideo} title="videography icon" /></h4>

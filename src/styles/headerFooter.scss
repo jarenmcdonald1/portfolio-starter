@@ -47,10 +47,11 @@
 
 .header-brand {
     font-weight: 900;
-    color: $gray-100;
+    color: $color-white;
+    font-size: 1.5em;
 
     &:hover {
-        color: $color-white;
+        color: $primary-400;
     }
 }
 
@@ -68,16 +69,16 @@
 
     a {
         margin-left: 1rem;
-        font-size: 0.85em;
+        font-size: 1em;
         text-decoration: none;
-        color: $gray-100;
+        color: $color-white;
 
         &:first-child {
             margin-left: 0;
         }
 
         &:hover {
-            color: $color-white;
+            color: $gray-100;
         }
     }
 }
@@ -86,12 +87,25 @@
 /* Xsmall screen breakpoint */
 
 @media only screen and (min-width: $breakpoint-xs) {
-    
+    .header-nav {
+
+        a {
+            font-size: 1.25em;
+        }
+    }
 }
 
 
 /* Small screen breakpoint */
 
 @media only screen and (min-width: $breakpoint-sm) {
-    
+    .header-brand {
+        font-size: 1em;
+    }
+    .header-nav {
+
+        a {
+            font-size: 0.9em;
+        }
+    }
 }

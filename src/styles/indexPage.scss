@@ -14,7 +14,7 @@
         align-items: center;
         justify-content: center;
 
-        padding: 0.25em;
+        padding: 0.85em 0.25em;
 
         background-color: $primary-300;
         color: $color-white;
@@ -100,7 +100,7 @@
             flex-direction: row;
         }
         a {
-            padding: 0.45em 0.65em;
+            padding: 1em 0.45em;
 
             &:hover {
                 background-color: $primary-400;
@@ -112,7 +112,7 @@
 @media only screen and (min-width: $breakpoint-sm) {
     .quicklinksCon {
         a {
-            padding: 1em;
+            padding: 1.125em 0.65em;
             font-size: 1em;
         }
     }
