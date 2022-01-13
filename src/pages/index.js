@@ -5,6 +5,9 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhotoVideo, faPenNib, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+
 const IndexPage = ({ data }) => {
   const emailLink = data.site.siteMetadata?.social.emailUrl;
 
@@ -27,7 +30,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* quick links open */}
-    <section className="quicklinksCon">
+    <section className="quicklinksCon mb-4 mb-md-5">
       <div className="linksCon w-100 d-flex flex-nowrap justify-content-center align-items-center">
         <Link to="/work" alt="...">
           View my work
@@ -38,10 +41,96 @@ const IndexPage = ({ data }) => {
       </div>
     </section>
 
-    {/* main body content */}
-    <section className="worksamples-con">
+    {/* project samples open */}
+    <section className="worksamples-con container mb-4 mb-md-5 pb-md-4">
+    <div className="row">
+      <div className="col">
+        <h2 className="section-title">Projects</h2>
+      </div>
+    </div>
+  </section>
+
+    {/* about me open */}
+    <section className="about-con container mb-4 mb-md-5 pb-md-4">
       <div className="row">
-        
+        <div className="col">
+          <h2 className="section-title">About me</h2>
+        </div>
+      </div>
+      <div className="row mb-3 mb-md-4">
+        <div className="col">
+          <GatsbyImage className="aboutmeImg" image={getImage(data.aboutmeImg)} alt="..." />
+        </div>
+        <div className="col-12 col-md-6 px-4 py-3 d-flex justify-content-center align-items-center">
+          <div>
+            <h3 className="mb-1">Hello, I'm Jaren</h3>
+            <h5 className="mb-1">I'm a multi-talented front-end web developer that loves what I do!</h5>
+            <p className="mb-1">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+      <div className="col-12 col-md-4">
+          <div className="card aboutmeCards">
+            <div className="card-body">
+              <h4 className="card-title">Code <FontAwesomeIcon className="titleIcon" icon={faLaptopCode} title="laptop code icon" /></h4>
+              <div className="d-flex flex-wrap justify-content-center align-items-center skillsText">
+                <p>Git</p>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>SASS/SCSS</p>
+                <p>PostCSS</p>
+                <p>JavaScript ES6</p>
+                <p>Grunt/Gulp</p>
+                <p>VueJS</p>
+                <p>ReactJS</p>
+                <p>NodeJS</p>
+                <p>PHP</p>
+                <p>mySQL</p>
+                <p>Wordpress CMS</p>
+                <p>Drupal CMS</p>
+                <p>Netlify CMS</p>
+                <p>GatsbyJS</p>
+                <p>NuxtJS</p>
+                <p>Bootstrap 4&5</p>
+                <p>TailwindCSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-4">
+          <div className="card aboutmeCards">
+            <div className="card-body">
+              <h4 className="card-title">Design <FontAwesomeIcon className="titleIcon" icon={faPenNib} title="design icon" /></h4>
+              <div className="d-flex flex-wrap justify-content-center align-items-center skillsText">
+                <p>Adobe Acrobat</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+                <p>Adobe InDesign</p>
+                <p>Adobe XD</p>
+                <p>Sketch</p>
+                <p>Adobe Lightroom</p>
+                <p>Affinity Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-4">
+          <div className="card aboutmeCards">
+            <div className="card-body">
+              <h4 className="card-title">Video <FontAwesomeIcon className="titleIcon" icon={faPhotoVideo} title="videography icon" /></h4>
+              <div className="d-flex flex-wrap justify-content-center align-items-center skillsText">
+                <p>Event Videography</p>
+                <p>Interviews</p>
+                <p>Adobe After Effects</p>
+                <p>Adobe Premier</p>
+                <p>Final Cut Pro X</p>
+                <p>Motion 5</p>
+                <p>Adobe Media Encoder</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -58,6 +147,7 @@ const IndexPage = ({ data }) => {
             <h3 className="pb-3 text-center contact-email-link">
               <a href={`mailto:${emailLink}`} alt="send me an email">{emailLink}</a>
             </h3>
+            <GatsbyImage className="contactImg" image={getImage(data.contactImg)} alt="..." />
             <p className="card-text">Hello, I'm Jaren</p>
             <p className="card-text">I'm a multi-talented front-end web developer that loves what I do!</p>
             <p className="card-text">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
@@ -81,6 +171,29 @@ export const pageQuery = graphql`
         gatsbyImageData(
           quality: 100
           layout: FULL_WIDTH
+          placeholder: BLURRED
+        )
+      }
+    }
+    aboutmeImg: file(
+      relativePath: { eq: "sitting-canyon.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+        )
+      }
+    }
+    contactImg: file(
+      relativePath: { eq: "jaren-profile.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          layout: FULL_WIDTH
+          placeholder: BLURRED
         )
       }
     }

@@ -1,6 +1,8 @@
 /* index styles */
 
 
+/* quicklinks styles*/
+
 .quicklinksCon {
     .linksCon { 
         flex-direction: column;
@@ -37,6 +39,40 @@
 }
 
 
+/* about styles */
+
+.aboutmeImg {
+    width: 100%;
+    max-height: 200px;
+}
+
+.aboutmeCards {
+    background-color: $secondary-500;
+    border-color: $secondary-400;
+
+    .card-title {
+        border-bottom: 1px solid $secondary-400;
+        text-align: center;
+        padding-bottom: 0.85em;
+    }
+
+    .titleIcon {
+        margin-left: 0.5em;
+        font-weight: 400;
+    }
+
+    .skillsText p {
+        text-align: center;
+        margin: 0.125em;
+        padding: 0.25em 0.5em;
+        background-color: $secondary-400;
+        border-radius: $border-radius;
+        font-size: 0.8em;
+    }
+}
+
+
+/* contact styles */ 
 
 .contact-card {
     background-color: $secondary-400;
@@ -50,6 +86,11 @@
         font-size: 2em;
         border-bottom: 2px solid $color-white;
     }
+}
+
+.contactImg {
+    margin: 0 auto 1em;
+    max-width: 400px;
 }
 
 
@@ -71,12 +112,28 @@
 @media only screen and (min-width: $breakpoint-sm) {
     .quicklinksCon {
         a {
+            padding: 1em;
             font-size: 1em;
         }
     }
 
     .section-title {
         font-size: 9vw;
+    }
+
+    .contactImg {
+        float: right;
+        width: 100%;
+        max-width: 375px;
+        margin: 1em;
+    }
+}
+
+
+@media only screen and (min-width: $breakpoint-md) {
+    .aboutmeImg {
+        max-height: 300px;
+        height: 100%;
     }
 }
 
