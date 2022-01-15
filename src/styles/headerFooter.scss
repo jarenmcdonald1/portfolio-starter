@@ -42,16 +42,16 @@
 
     width: 100%;
 
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0,0,0,0.35);
 }
 
 .header-brand {
-    font-weight: 900;
+    font-weight: 800;
     color: $color-white;
-    font-size: 1.5em;
+    font-size: 1.45em;
 
     &:hover {
-        color: $primary-400;
+        color: $primary-200;
     }
 }
 
@@ -62,14 +62,10 @@
 }
 
 .header-nav {
-    justify-content: flex-end;
-}
-
-.header-nav {
 
     a {
         margin-left: 1rem;
-        font-size: 1em;
+        font-size: 1.125em;
         text-decoration: none;
         color: $color-white;
 
@@ -78,7 +74,7 @@
         }
 
         &:hover {
-            color: $gray-100;
+            color: $gray-200;
         }
     }
 }
@@ -99,8 +95,11 @@
 /* Small screen breakpoint */
 
 @media only screen and (min-width: $breakpoint-sm) {
+    .header-section {
+        background-color: rgba(0,0,0,0.15);
+    }
     .header-brand {
-        font-size: 1em;
+        font-size: 1.125em;
     }
     .header-nav {
 

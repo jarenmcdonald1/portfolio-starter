@@ -13,10 +13,39 @@
         grid-area: 1/1;
         position: relative;
         place-items: center;
+        max-width: 600px;
+
+        h4 {
+            text-align: center;
+            font-family: $accentFont;
+            font-weight: 700;
+            font-size: 3.5em;
+            line-height: 0.8;
+            text-shadow: 4px 3px 12px $gray-400;
+        }
     }
 
     .indexBannerCard, .card {
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0);
         border: 0;
+    }
+}
+
+
+@media only screen and (min-width: $breakpoint-sm) {
+    .banner-full {
+        .indexBannerCon {
+            h4 {
+                font-size: 4em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .banner-full {
+        .indexBannerCon {
+            max-width: 700px;
+        }
     }
 }

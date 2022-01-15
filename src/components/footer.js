@@ -8,18 +8,18 @@ import { faGithubSquare, faLinkedin, faYoutubeSquare } from '@fortawesome/free-b
 const Footer = ({ githubLink, youtubeLink, linkedinLink }) => {
   
   return (
-  <div className="footer-con">
+  <div className="footer-con pt-3 pb-0">
     <section className="container-fluid">
       <div className="row">
-        <div className="col mr-auto d-flex justify-content-start align-items-center">
-          <nav className="footer-nav justify-content-start">
+        <div className="col mr-auto d-flex justify-content-center align-items-center">
+          <nav className="footer-nav justify-content-around justify-content-sm-start">
             <Link to="/about">About</Link>
             <Link to="/work">Work</Link>
             <Link to="/contact">Contact</Link>
           </nav>
         </div>
-        <div className="col ml-auto d-flex justify-content-end align-items-center">
-          <nav className="footer-nav justify-content-end">
+        <div className="col ml-auto d-flex justify-content-center justify-content-sm-end align-items-center">
+          <nav className="footer-nav justify-content-around justify-content-sm-end">
             <a 
               className="icon-links" 
               href={githubLink}

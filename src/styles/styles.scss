@@ -9,7 +9,7 @@ body {
     color: $white-100;
     font-size: 100%;
     margin: 0;
-    font-family: "Segoe UI", Roboto, Verdana, "Helvetica Neue", sans-serif;
+    font-family: $mainFont, "Helvetica Neue", sans-serif;
 }
   
 a {
@@ -19,6 +19,11 @@ a {
     &:hover {
         color: $blue-200;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $mainFont, "Helvetica Neue", sans-serif;
+    font-weight: 700;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,6 +36,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     font-size: 0.9em;
+    font-weight: 400;
 }
 
 

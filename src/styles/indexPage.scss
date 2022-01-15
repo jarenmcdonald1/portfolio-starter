@@ -80,6 +80,10 @@
 
     a {
         color: inherit;
+
+        &:hover {
+            color: $gray-200;
+        }
     }
 
     .contact-email-link {
@@ -118,7 +122,7 @@
     }
 
     .section-title {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     .contactImg {
@@ -140,6 +144,6 @@
 
 @media only screen and (min-width: $breakpoint-lg) {
     .section-title {
-        font-size: 6em;
+        font-size: 5em;
     }
 }
