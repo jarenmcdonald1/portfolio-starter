@@ -1,0 +1,65 @@
+/* work pages styles */
+
+
+.work-posts-main-con {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.work-posts-con {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: 400px;
+}
+
+.workSample-con {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+
+    .workSample-thumbImg, .workSample-text {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .workSample-thumbImg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.workSample-text {
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em 0.5em;
+    height: 100%;
+
+    text-align: center;
+    color: $color-white;
+    text-shadow: 4px 3px 12px $gray-400;
+
+    &:hover {
+        background-color: rgba(49,47,82,0.65);
+
+        @include primary-transition;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+    .work-posts-con {
+        width: 50%;
+
+        max-height: 300px;
+
+        &:nth-child(3n+1) {
+            width: 100%;
+        }
+    }
+}

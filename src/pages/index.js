@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
 
   return (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Digital Developer and Designer" />
 
     {/* banner open */}
     <section className="banner-full">
@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
   </section>
 
     {/* about me open */}
-    <section className="about-con container mb-4 mb-md-5 pb-md-4">
+    <section id="aboutCon" className="about-con container mb-4 mb-md-5 pb-md-4">
       <div className="row">
         <div className="col">
           <h2 className="section-title">About me</h2>
@@ -135,7 +135,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* contact open */}
-    <section className="contact-con container">
+    <section id="contactCon" className="contact-con container">
       <div className="row">
         <div className="col">
           <h2 className="section-title">Say hi!</h2>

@@ -13,9 +13,9 @@ const Header = ({ siteTitle }) => (
         </div>
         <div className="col-12 col-sm-6 ml-auto d-flex justify-content-center justify-content-sm-end align-items-center">
           <nav className="w-100 header-nav justify-content-around justify-content-sm-end">
-            <Link to="/about">About</Link>
+            <Link to="/#aboutCon">About</Link>
             <Link to="/work">Work</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/#contactCon">Contact</Link>
           </nav>
         </div>
       </div>
