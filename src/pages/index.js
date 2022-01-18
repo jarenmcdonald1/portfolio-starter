@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
       <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} alt="..." />
       <div className="container indexBannerCon">
         <div className="row h-100">
-          <div className="col d-flex justify-content-center align-items-center">
+          <div className="col d-flex py-3 justify-content-center align-items-end align-items-lg-center">
             <div className="card indexBannerCard mx-auto px-2 py-3">
               <h4 className="mb-0">Creating the future with a sense of adventure!</h4>
             </div>
