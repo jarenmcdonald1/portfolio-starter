@@ -51,3 +51,6 @@ $border-radius: 0.45em;
 @mixin primary-transition() {
     transition: all 0.14s ease-in-out;
 }
+@mixin secondary-transition() {
+    transition: all 0.18s ease-in-out;
+}

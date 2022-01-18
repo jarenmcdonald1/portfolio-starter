@@ -100,6 +100,11 @@
 /* Small screen breakpoint */
 
 @media only screen and (min-width: $breakpoint-sm) {
+    .footer-nav {
+        a {
+            color: $gray-300;
+        }
+    }
     .header-gap {
         height: 80px;
     }
@@ -113,6 +118,24 @@
 
         a {
             font-size: 0.9em;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .header-gap {
+        height: 80px;
+    }
+    .header-section {
+        background-color: rgba(0,0,0,0.25);
+    }
+    .header-brand {
+        font-size: 1.25em;
+    }
+    .header-nav {
+
+        a {
+            font-size: 1em;
         }
     }
 }

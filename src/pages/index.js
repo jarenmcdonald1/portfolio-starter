@@ -10,6 +10,7 @@ import { faPhotoVideo, faPenNib, faLaptopCode } from '@fortawesome/free-solid-sv
 
 const IndexPage = ({ data }) => {
   const emailLink = data.site.siteMetadata?.social.emailUrl;
+  const { posts } = data.projects;
 
   return (
   <Layout>
@@ -48,6 +49,22 @@ const IndexPage = ({ data }) => {
         <h2 className="section-title">Projects</h2>
       </div>
     </div>
+    <section className="row">
+      {posts.map(post => (
+        <div className="col-12 col-sm-4 p-0">
+            <Link to={post.fields.slug} key={post.id} className="workSample-con" alt={`View the ${post.frontmatter.title} project`}>
+              <GatsbyImage className="workSample-thumbImg w-100" image={getImage(post.frontmatter.thumbimg)} alt={`${post.frontmatter.subtitle}`} loading="lazy" objectFit />
+              <div className="workSample-text">
+                <div>
+                <h3 className="mb-1">{post.frontmatter.title}</h3>
+                <p className="mb-0">{post.frontmatter.subtitle}</p>
+                </div>
+              </div>
+            </Link>
+        </div>
+      ))}
+      <div className="col-12 py-2 px-0"><p>View all projects on my <Link to={'/work'} title="Go to the Work page">Work page</Link></p></div>
+    </section>
   </section>
 
     {/* about me open */}
@@ -63,7 +80,7 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="col-12 col-md-6 px-4 py-3 d-flex justify-content-center align-items-center">
           <div>
-            <h2 className="mb-1">Hello, I'm Jaren</h2>
+            <h2 className="mb-1 about-intro">Hello, I'm Jaren</h2>
             <h4 className="mb-1">I'm a multi-talented front-end web developer that loves what I do!</h4>
             <p className="mb-1">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions.</p>
           </div>
@@ -201,6 +218,27 @@ export const pageQuery = graphql`
       siteMetadata {
         social {
           emailUrl
+        }
+      }
+    },
+    projects: allMarkdownRemark(
+      sort: {fields: [frontmatter___date], order: DESC}
+      limit: 3
+    ) {
+      posts: nodes {
+        frontmatter {
+          date(formatString: "MMM YYYY")
+          title
+          subtitle
+          thumbimg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+        id
+        fields {
+          slug
         }
       }
     }

@@ -3,7 +3,6 @@
 
 .work-posts-main-con {
     margin: 0 auto;
-    max-width: 800px;
 }
 
 .work-posts-con {
@@ -46,9 +45,9 @@
     text-shadow: 4px 3px 12px $gray-400;
 
     &:hover {
-        background-color: rgba(49,47,82,0.65);
+        background-color: #312f52a6;
 
-        @include primary-transition;
+        @include secondary-transition;
     }
 }
 
@@ -60,6 +59,24 @@
 
         &:nth-child(3n+1) {
             width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+    .work-posts-con {
+        width: 33.33%;
+
+        max-height: 300px;
+
+        &:nth-child(3n+1) {
+            width: 33.34%;
+        }
+        &:nth-child(5n+1) {
+            width: 50%;
+        }
+        &:nth-child(5n+2) {
+            width: 50%;
         }
     }
 }
