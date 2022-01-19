@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* project samples open */}
-    <section className="worksamples-con container mb-4 mb-md-5 pb-md-4">
+    <section className="worksamples-con container mb-4 mb-md-5 pt-sm-4 pb-sm-5">
     <div className="row">
       <div className="col">
         <h2 className="section-title">Projects</h2>
@@ -51,24 +51,24 @@ const IndexPage = ({ data }) => {
     </div>
     <section className="row">
       {posts.map(post => (
-        <div className="col-12 col-sm-4 p-0">
+        <div className="col-12 col-sm-4 p-0 px-sm-0">
             <Link to={post.fields.slug} key={post.id} className="workSample-con" alt={`View the ${post.frontmatter.title} project`}>
               <GatsbyImage className="workSample-thumbImg w-100" image={getImage(post.frontmatter.thumbimg)} alt={`${post.frontmatter.subtitle}`} loading="lazy" objectFit />
               <div className="workSample-text">
                 <div>
                 <h3 className="mb-1">{post.frontmatter.title}</h3>
-                <p className="mb-0">{post.frontmatter.subtitle}</p>
+                <p className="mb-0 d-sm-none d-md-block">{post.frontmatter.subtitle}</p>
                 </div>
               </div>
             </Link>
         </div>
       ))}
-      <div className="col-12 py-2 px-0"><p>View all projects on my <Link to={'/work'} title="Go to the Work page">Work page</Link></p></div>
+      <div className="col-12 py-2"><p>View all projects on my <Link to={'/work'} title="Go to the Work page">Work page</Link></p></div>
     </section>
   </section>
 
     {/* about me open */}
-    <section id="aboutCon" className="about-con container mb-4 mb-md-5 pb-md-4">
+    <section id="aboutCon" className="about-con container mb-4 mb-md-5 pt-sm-4 pb-sm-5">
       <div className="row">
         <div className="col">
           <h2 className="section-title">About me</h2>
@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="row">
-      <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
+      <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Code <FontAwesomeIcon className="titleIcon" icon={faLaptopCode} title="laptop code icon" /></h4>
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
+        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Design <FontAwesomeIcon className="titleIcon" icon={faPenNib} title="design icon" /></h4>
@@ -132,7 +132,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4 mb-2 mb-md-0 px-2 px-sm-3 px-md-1">
+        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Video <FontAwesomeIcon className="titleIcon" icon={faPhotoVideo} title="videography icon" /></h4>
@@ -152,7 +152,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* contact open */}
-    <section id="contactCon" className="contact-con container">
+    <section id="contactCon" className="contact-con container pt-sm-4 pb-sm-5">
       <div className="row">
         <div className="col">
           <h2 className="section-title">Say hi!</h2>

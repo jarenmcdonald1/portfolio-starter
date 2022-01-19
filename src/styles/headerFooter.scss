@@ -26,7 +26,7 @@
 .footer-text {
     font-size: 0.85em;
     text-align: center;
-    color: $gray-300;
+    color: $gray-200;
 }
 
 
@@ -100,11 +100,6 @@
 /* Small screen breakpoint */
 
 @media only screen and (min-width: $breakpoint-sm) {
-    .footer-nav {
-        a {
-            color: $gray-300;
-        }
-    }
     .header-gap {
         height: 80px;
     }

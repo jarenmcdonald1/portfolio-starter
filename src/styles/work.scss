@@ -51,6 +51,7 @@
     }
 }
 
+
 @media only screen and (min-width: $breakpoint-sm) {
     .work-posts-con {
         width: 50%;
@@ -78,5 +79,23 @@
         &:nth-child(5n+2) {
             width: 50%;
         }
+    }
+}
+
+
+/* work sample post page */
+
+.projectsSample-page-con {
+    background-color: $secondary-400;
+}
+
+.projectsSample-details-con {
+    width: 100%;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+    .projectsSample-details-con {
+        width: auto;
     }
 }
