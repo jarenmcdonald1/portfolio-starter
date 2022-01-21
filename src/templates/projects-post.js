@@ -59,13 +59,15 @@ const ProjectPost = ({ data }) => {
 export default ProjectPost
 
 export const query = graphql`
-  query ProjectQuery($slug: String!) {
-    markdownRemark(
-      fields: { slug: { eq: $slug } }
+  query ProjectQuery(
+    $slug: String!
+    ) {
+    markdownRemark(fields: { slug: { eq: $slug } }
       ) {
       html
+      id
       frontmatter {
-      date(formatString: "MMM YYYY")
+        date(formatString: "MMM YYYY")
        title
        subtitle
        tags
@@ -80,6 +82,10 @@ export const query = graphql`
      excerpt
      id
      html
+     timeToRead
+     wordCount {
+       words
+     }
     }
   }
 `

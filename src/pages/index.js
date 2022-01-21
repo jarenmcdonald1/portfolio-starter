@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
 
     {/* banner open */}
     <section className="banner-full">
-      <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} loading="eager" alt="..." />
+      <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} alt="Lake Louise 2021" />
       <div className="container indexBannerCon">
         <div className="row h-100">
           <div className="col d-flex py-3 justify-content-center align-items-end align-items-lg-center">
@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
       </div>
       <div className="row mb-3 mb-md-4">
         <div className="col">
-          <GatsbyImage className="aboutmeImg" image={getImage(data.aboutmeImg)} alt="..." />
+          <GatsbyImage className="aboutmeImg" image={getImage(data.aboutmeImg)} alt="Me, sitting on the edge of Ouimet Canyon" />
         </div>
         <div className="col-12 col-md-6 px-4 py-3 d-flex justify-content-center align-items-center">
           <div>
@@ -164,7 +164,7 @@ const IndexPage = ({ data }) => {
             <h3 className="pb-3 text-center contact-email-link">
               <a href={`mailto:${emailLink}`} alt="send me an email">{emailLink}</a>
             </h3>
-            <GatsbyImage className="contactImg" image={getImage(data.contactImg)} alt="..." />
+            <GatsbyImage className="contactImg" image={getImage(data.contactImg)} alt="My sitting with my car" />
             <p className="card-text">Let's chat!</p>
             <p className="card-text">I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
             <p className="card-text">Do you have a new or existing project that could use some fresh creative energy? Just send me an email and we'll get started right away!</p>

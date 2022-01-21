@@ -28,12 +28,10 @@ const Tags = ({ pageContext, data }) => {
                 <div className="row  work-posts-main-con">
                     {edges.map(({ node }) => {
                         
-                    const { slug } = node.fields
-                    const { title } = node.frontmatter
                     return (
                         <div className="work-posts-con p-0">
                             <Link to={node.fields.slug} key={node.id} className="workSample-con" alt={`View the ${node.frontmatter.title} project`}>
-                            <GatsbyImage className="workSample-thumbImg w-100" image={getImage(node.frontmatter.thumbimg)} alt={`${node.frontmatter.subtitle}`} loading="lazy" objectFit />
+                            <GatsbyImage className="workSample-thumbImg w-100" image={getImage(node.frontmatter.thumbimg)} alt={`${node.frontmatter.subtitle}`} loading="eager" objectFit />
                             <div className="workSample-text">
                                 <div>
                                 <h3 className="mb-1">{node.frontmatter.title}</h3>
@@ -79,7 +77,7 @@ Tags.propTypes = {
 }
 
 export default Tags
-
+/*
 export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
@@ -107,3 +105,4 @@ export const pageQuery = graphql`
     }
   }
 `
+*/
