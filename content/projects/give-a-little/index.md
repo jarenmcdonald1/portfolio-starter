@@ -6,10 +6,7 @@ author: 'Jaren McDonald'
 client: 'Fanshawe College and Lashbrook Marketing and Public Relations'
 thumbimg: './od-thumb.jpg'
 role: 'front-end web developer'
-tags:
-- Web Development
-- Marketing
-- Graphic Design
+tags: ["Web Development", "Marketing", "Graphic Design"]
 ---
 
 Fanshawe College partnered with Lashbrook Marketing and Public Relations for a semester-long project in my 4th year. The task was simple: create a campaign centered around a website that would encourage Canadians to sign up as organ donors. My group chose to focus our efforts towards young Canadians, around 16 years old, who would soon have the decision to register as an organ donor. We created a website that offered new registered donors unique rewards for signing up as well as encouraging them to recommend others to sign up. The site would have coupons and gift vouchers for the newly registered donars to redeem from partner brands and businesses.

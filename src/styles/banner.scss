@@ -31,6 +31,17 @@
     }
 }
 
+.projectsPageBannerCard {
+    text-shadow: 2px 2px 12px $gray-500;
+
+    h2 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+
 
 @media only screen and (min-width: $breakpoint-sm) {
     .banner-full {
@@ -38,6 +49,16 @@
             h4 {
                 font-size: 4em;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+    .projectsPageBannerCard {
+        text-shadow: 2px 3px 12px $gray-500;
+    
+        p {
+            font-size: 1.25em;
         }
     }
 }

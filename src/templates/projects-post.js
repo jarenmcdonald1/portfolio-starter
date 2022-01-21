@@ -18,7 +18,7 @@ const ProjectPost = ({ data }) => {
               <div className="container indexBannerCon">
                 <div className="row h-100">
                   <div className="col d-flex py-3 justify-content-center align-items-center">
-                    <div className="card indexBannerCard mx-auto px-2 py-3 text-center">
+                    <div className="card projectsPageBannerCard mx-auto px-2 py-3 text-center">
                       <h2 className="mb-0">{post.frontmatter.title}</h2>
                       <p className="mb-0">{post.frontmatter.subtitle}</p>
                     </div>
@@ -60,10 +60,12 @@ export default ProjectPost
 
 export const query = graphql`
   query ProjectQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+      ) {
       html
       frontmatter {
-        date(formatString: "MMM YYYY")
+      date(formatString: "MMM YYYY")
        title
        subtitle
        tags
@@ -78,10 +80,6 @@ export const query = graphql`
      excerpt
      id
      html
-     timeToRead
-     wordCount {
-       words
-     }
     }
   }
 `

@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
 
     {/* banner open */}
     <section className="banner-full">
-      <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} alt="..." />
+      <GatsbyImage className="indexBannerImg" image={getImage(data.bannerImg)} loading="eager" alt="..." />
       <div className="container indexBannerCon">
         <div className="row h-100">
           <div className="col d-flex py-3 justify-content-center align-items-end align-items-lg-center">
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
         <Link to="/work" alt="...">
           View my work
         </Link>
-        <Link to="/contact" alt="...">
+        <Link to="/#contactCon" alt="...">
           Let's connect
         </Link>
       </div>
@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="row">
-      <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
+      <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-2 px-lg-3">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Code <FontAwesomeIcon className="titleIcon" icon={faLaptopCode} title="laptop code icon" /></h4>
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
+        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-2 px-lg-3">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Design <FontAwesomeIcon className="titleIcon" icon={faPenNib} title="design icon" /></h4>
@@ -132,7 +132,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-1">
+        <div className="col-12 col-md-4 mb-3 mb-md-0 px-2 px-sm-4 px-md-2 px-lg-3">
           <div className="card aboutmeCards">
             <div className="card-body">
               <h4 className="card-title">Video <FontAwesomeIcon className="titleIcon" icon={faPhotoVideo} title="videography icon" /></h4>
