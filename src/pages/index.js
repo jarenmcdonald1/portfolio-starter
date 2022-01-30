@@ -80,8 +80,8 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="col-12 col-md-6 px-4 py-3 d-flex justify-content-center align-items-center">
           <div>
-            <h2 className="mb-1 about-intro">Hello, I'm Jaren</h2>
-            <h4 className="mb-1">I'm a multi-talented front-end web developer that loves what I do!</h4>
+            <h2 className="mb-2 mb-md-3 about-intro">Hello, I'm Jaren</h2>
+            <h4 className="mb-2">I'm a multi-talented front-end web developer that loves what I do!</h4>
             <p className="mb-1">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions.</p>
           </div>
         </div>
@@ -161,13 +161,11 @@ const IndexPage = ({ data }) => {
       <div className="row">
         <div className="col contact-card">
           <div className="card-body">
-            <h3 className="pb-3 text-center contact-email-link">
-              <a href={`mailto:${emailLink}`} alt="send me an email">{emailLink}</a>
-            </h3>
             <GatsbyImage className="contactImg" image={getImage(data.contactImg)} alt="My sitting with my car" />
-            <p className="card-text">Let's chat!</p>
+            <h3 className="card-title pt-3 mb-3">Let's chat!</h3>
             <p className="card-text">I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
             <p className="card-text">Do you have a new or existing project that could use some fresh creative energy? Just send me an email and we'll get started right away!</p>
+            <p className="card-text"><a href={`mailto:${emailLink}`} alt="send me an email" className="">{emailLink}</a></p>
             <p className="card-text">Jaren McDonald<br/>Vancouver, Canada</p>
           </div>
         </div>
