@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
         <div className="row h-100">
           <div className="col d-flex py-3 justify-content-center align-items-end align-items-lg-center">
             <div className="card indexBannerCard mx-auto px-2 py-3">
-              <h4 className="mb-0">Creating the future with a sense of adventure!</h4>
+              <h2 className="mb-0">Creating the future with a sense of adventure!</h2>
             </div>
           </div>
         </div>
