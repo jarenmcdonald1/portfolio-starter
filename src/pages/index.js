@@ -81,7 +81,7 @@ const IndexPage = ({ data }) => {
         <div className="col-12 col-md-6 px-4 py-3 d-flex justify-content-center align-items-center">
           <div>
             <h2 className="mb-2 mb-md-3 about-intro">Hello, I'm Jaren</h2>
-            <h4 className="mb-2">I'm a multi-talented front-end web developer that loves what I do!</h4>
+            <h3 className="mb-2">I'm a multi-talented front-end web developer that loves what I do!</h3>
             <p className="mb-1">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions.</p>
           </div>
         </div>
