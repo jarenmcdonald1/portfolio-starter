@@ -11,7 +11,7 @@ tags: ["NuxtJS", "Netlify CMS", "Tailwind CSS"]
 
 View the live site here: [kylehooper.ca](https://www.kylehooper.ca/)
 
-I created this blog site for Kyle Hooper as a portfolio piece as well as a resume. Using NuxtJS and Netlify CMS, I created a fast loading website with a full-featured CMS for the client to update the site on their own! I decided to start this project with NuxtJS to learn more about VueJS as well as to compare the development process and performance with GatsbyJS.
+I created this blog site for Kyle Hooper as a portfolio piece as well as a resume. Using NuxtJS and Netlify CMS, I built a fast loading website with a full-featured CMS for the client to update the site and add new project posts on their own! I decided to start this project with NuxtJS to learn more about VueJS as well as to compare the development process and performance with GatsbyJS. I learned lots about the Vue development process and am excited to try more projects using Vue!
 
 ![My Google Lighthouse score](./overall-score.png)
 

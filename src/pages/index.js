@@ -11,6 +11,7 @@ import { faPhotoVideo, faPenNib, faLaptopCode } from '@fortawesome/free-solid-sv
 const IndexPage = ({ data }) => {
   const emailLink = data.site.siteMetadata?.social.emailUrl;
   const { posts } = data.projects;
+  const yearsWorked = new Date().getFullYear() - 2011;
 
   return (
   <Layout>
@@ -49,7 +50,7 @@ const IndexPage = ({ data }) => {
         <h2 className="section-title">Projects</h2>
       </div>
     </div>
-    <section className="row">
+    <section className="row rounded-lg overflow-hidden">
       {posts.map(post => (
         <div className="col-12 col-sm-4 p-0 px-sm-0">
             <Link to={post.fields.slug} key={post.id} className="workSample-con" alt={`View the ${post.frontmatter.title} project`}>
@@ -82,7 +83,7 @@ const IndexPage = ({ data }) => {
           <div>
             <h2 className="mb-2 mb-md-3 about-intro">Hello, I'm Jaren</h2>
             <h3 className="mb-2">I'm a multi-talented front-end web developer that loves what I do!</h3>
-            <p className="mb-1">Since beginning my journey nearly 11 years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions.</p>
+            <p className="mb-1">Since beginning my journey nearly {yearsWorked} years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions.</p>
           </div>
         </div>
       </div>
