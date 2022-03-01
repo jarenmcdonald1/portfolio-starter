@@ -35,10 +35,11 @@
     text-shadow: 2px 2px 12px $gray-500;
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.5em !important;
+        font-family: $mainFont !important;
     }
     p {
-        font-size: 1.5em;
+        font-size: 1.125em;
     }
 }
 

@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* project samples open */}
-    <section className="worksamples-con container mb-4 mb-md-5 pt-sm-4 pb-sm-5">
+    <section className="worksamples-con container mb-4 mb-md-5 pt-sm-4 pt-lg-5 pb-sm-5">
     <div className="row">
       <div className="col">
         <h2 className="section-title">Projects</h2>
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
   </section>
 
     {/* about me open */}
-    <section id="aboutCon" className="about-con container mb-4 mb-md-5 pt-sm-4 pb-sm-5">
+    <section id="aboutCon" className="about-con container mb-4 mb-md-5 pt-sm-4 pt-lg-5 pb-sm-5">
       <div className="row">
         <div className="col">
           <h2 className="section-title">About me</h2>
@@ -153,7 +153,7 @@ const IndexPage = ({ data }) => {
     </section>
 
     {/* contact open */}
-    <section id="contactCon" className="contact-con container pt-sm-4 pb-sm-5">
+    <section id="contactCon" className="contact-con container pt-sm-4 pt-lg-5 pb-sm-5">
       <div className="row">
         <div className="col">
           <h2 className="section-title">Say hi!</h2>
