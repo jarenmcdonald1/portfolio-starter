@@ -9,7 +9,7 @@ role: 'front-end web developer'
 tags: ["NuxtJS", "Netlify CMS", "TailwindCSS"]
 ---
 
-View the live site on [rmdholistics.com](https://www.rmdholistics.com)
+View the live site on [rmdholistics.com](https://rmdholistics.com)
 
 This site is meant to attract potential clients and existing customers to the services offered. The blog is used to post updates and stories that keep users coming back for more content!
 
