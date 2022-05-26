@@ -20,6 +20,6 @@ tags:
 
  ![Team Canada 1972 legacy page](./tc-sample-4.jpg)
 
- The website was build with a PHP backend and mySQL database on the LAMP stack.
+ The website was built with a PHP backend and mySQL database on the LAMP stack. I used MAMP to run the database and PHP environment locally. 
 
  ![Team Canada 1972 events and programs page](./tc-sample-2.jpg)
